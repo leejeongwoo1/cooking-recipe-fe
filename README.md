@@ -4,23 +4,6 @@ What’s in your fridge 는 사용자가 다양한 레시피를 확인하고, �
 >
 <br>
 
-### 개발 기간
-
-- 전체 개발 기간: 2024-06-16 ~ 2024-06-30
-- 백앤드 구현: 2022-06-18 ~ 2022-06-27
-- 프론트앤드 및 기능 구현: 2022-06-18 ~ 2022-06-30
-
-### 배포 주소
-
-><div>프론트 서버 : https://whats-is-your-fridge.netlify.app/</div>
->백엔드 서버 : http://what-is-your-fridge.us-east-1.elasticbeanstalk.com/
-<br>
-
-### 테스트 계정
-
-- **Test ID**: admin@gmail.com
-- **Test PW**: 123
-
 ## 프로젝트 소개
 
 **What’s in your fridge**는 요리를 할 때 여러 사이트를 돌아다니며 레시피를 찾고 식재료를 따로 구매하는 번거로움을 없애기 위해 기획하게 되었습니다.
@@ -29,35 +12,29 @@ What’s in your fridge 는 사용자가 다양한 레시피를 확인하고, �
 - 다양한 유저들을 마음에 드는 레시피나 상품에 평점을 주고 댓글을 작성할 수 있습니다.
 <br>
 
-## 팀원 구성
-
-|이정우|정성욱|최충현|오혜림|
-|:------:|:---:|:---:|:-----:|
-|[@leejeongwoo1](https://github.com/leejeongwoo1/leejeongwoo1)|[@SungJung0616](https://github.com/SungJung0616)|[@zzgh06](https://github.com/zzgh06)|[@ohloara](https://github.com/ohloara)|
+## ⭐ 주요 기능 
+  ### 1. 레시피 관리
+  - 다양한 레시피 검색 및 작성
+  - 레시피 상세 정보 보기
+  ### 2. 식재료 관리
+  - 필요한 식재료 장바구니 추가
+  - 식재료 구매
+  ### 3. 냉장고 관리
+  - 냉장고 식재료 관리
+  - 냉장고 내 식재료 레시피 추천
+  ### 4. 리뷰 및 사용자 관리
+  - 레시피, 식재료 리뷰 작성
+  ### 5. 챗봇
+  - 문의 기능
 <br>
 
-## 시작 가이드
-
-1. 리포지토리 클론
-    ```sh
-    git clone git@github.com:zzgh06/cooking-recipe-be.git
-    ```
-2. 패키지 설치
-    ```sh
-    cd cooking-recipe-be
-    npm install
-    ```
-3. 환경변수 설정
-    ```
-    MONGO_URI=your_mongo_uri
-    JWT_SECRET=your_jwt_secret
-    GOOGLE_CLIENT_ID=your_google_client_id
-    GOOGLE_CLIENT_SECRET=your_google_client_secret
-    ```
-4. 로컬 서버 시작
-    ```sh
-    npm run local_start
-    ```
+## 사용 방법
+1. 홈페이지에서 원하는 레시피를 검색합니다.
+2. 레시피를 클릭하여 상세 정보를 확인합니다.
+3. 필요한 식재료를 장바구니에 추가합니다.
+4. My 냉장고에서 가지고 있는 등록한 후 추천 레시피를 확인합니다.
+5. 장바구니 페이지로 이동하여 식재료를 구매합니다.
+6. 마이 페이지에서 주문현황을 확인할 수 있습니다.
 <br>
 
 ## 📚 STACKS
@@ -86,27 +63,18 @@ What’s in your fridge 는 사용자가 다양한 레시피를 확인하고, �
 - Redux Toolkit은 기존 Redux보다 설정이 간단하고, 보일러플레이트 코드가 적어 학습 비용을 줄일 수 있었습니다.
 - createSlice와 createAsyncThunk 등을 사용하여 상태와 비동기 로직을 효율적으로 관리했습니다.
 
-## 브랜치 전략
+**브랜치 전략**
 
 - Git-flow 전략을 기반으로 master, develop 브랜치와 feature 보조 브랜치를 운용했습니다.
 - master, develop, Feat 브랜치로 나누어 개발을 하였습니다.
 - master 브랜치는 배포 단계에서만 사용하는 브랜치입니다.
 - develop 브랜치는 개발 단계에서 git-flow의 master 역할을 하는 브랜치입니다.
 - Feat 브랜치는 기능 단위로 독립적인 개발 환경을 위하여 사용하고 merge 후 각 브랜치를 삭제해주었습니다.
-
-## 프로젝트 구조
-
-### 백앤드
-
-### 백앤드 폴더 구조
-
-[cooking-recipe-be.md](./cooking-recipe-be.txt)
-
-### 백앤드 ERD
+## ERD
 
 ![ERD](./public/image/erd.png)
 
-### API
+## API
 
 - ![API Auth](./public/image/api_auth.png)
 - ![API User](./public/image/api_user.png)
@@ -117,12 +85,6 @@ What’s in your fridge 는 사용자가 다양한 레시피를 확인하고, �
 - ![API Review Recipe](./public/image/api_review_recipe.png)
 - ![API Review Ingredient](./public/image/api_reivew_ingredient.png)
 - ![API Order](./public/image/api_order.png)
-
-## 프론트앤드
-
-### 프론트앤드 폴더구조
-
-[cooking-recipe-fe.md](./cooking-recipe-fe.txt)
 
 ## 화면 구성
 
@@ -139,27 +101,40 @@ What’s in your fridge 는 사용자가 다양한 레시피를 확인하고, �
 |![image](https://github.com/zzgh06/cooking-recipe-be/assets/127922435/39273759-b8a2-4ac5-94dd-c5e5e8fb526b)|![image](https://github.com/zzgh06/cooking-recipe-be/assets/127922435/4dde076d-63e9-4655-9a11-d961d5a36ad2)|
 <br>
 
-## ⭐ 주요 기능 
-  ### 1. 레시피 관리
-  - 다양한 레시피 검색 및 작성
-  - 레시피 상세 정보 보기
-  ### 2. 식재료 관리
-  - 필요한 식재료 장바구니 추가
-  - 식재료 구매
-  ### 3. 냉장고 관리
-  - 냉장고 식재료 관리
-  - 냉장고 내 식재료 레시피 추천
-  ### 4. 리뷰 및 사용자 관리
-  - 레시피, 식재료 리뷰 작성
-  ### 5. 챗봇
-  - 문의 기능
+
+## 시작 가이드
+
+1. 리포지토리 클론
+    ```sh
+    git clone git@github.com:zzgh06/cooking-recipe-be.git
+    ```
+2. 패키지 설치
+    ```sh
+    cd cooking-recipe-be
+    npm install
+    ```
+3. 환경변수 설정
+    ```
+    MONGO_URI=your_mongo_uri
+    JWT_SECRET=your_jwt_secret
+    GOOGLE_CLIENT_ID=your_google_client_id
+    GOOGLE_CLIENT_SECRET=your_google_client_secret
+    ```
+4. 로컬 서버 시작
+    ```sh
+    npm run local_start
+    ```
 <br>
 
-## 사용 방법
-1. 홈페이지에서 원하는 레시피를 검색합니다.
-2. 레시피를 클릭하여 상세 정보를 확인합니다.
-3. 필요한 식재료를 장바구니에 추가합니다.
-4. My 냉장고에서 가지고 있는 등록한 후 추천 레시피를 확인합니다.
-5. 장바구니 페이지로 이동하여 식재료를 구매합니다.
-6. 마이 페이지에서 주문현황을 확인할 수 있습니다.
+### 팀원 구성
+
+|이정우|정성욱|최충현|오혜림|
+|:------:|:---:|:---:|:-----:|
+|[@leejeongwoo1](https://github.com/leejeongwoo1/leejeongwoo1)|[@SungJung0616](https://github.com/SungJung0616)|[@zzgh06](https://github.com/zzgh06)|[@ohloara](https://github.com/ohloara)|
 <br>
+
+### 개발 기간
+
+- 전체 개발 기간: 2024-06-16 ~ 2024-06-30
+- 백앤드 구현: 2022-06-18 ~ 2022-06-27
+- 프론트앤드 및 기능 구현: 2022-06-18 ~ 2022-06-30
