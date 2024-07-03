@@ -155,10 +155,10 @@ What’s in your fridge 는 사용자가 다양한 레시피를 확인하고, �
    REACT_APP_GOOGLE_SECRET_KEY=
    ```
 5. 로컬 서버 시작
-   `sh
-백엔드: npm run local_start 
-프론트엔드: npm start
-`
+   ```sh
+   백엔드: npm run local_start
+   프론트엔드: npm start
+   ```
    <br>
 
 ### 팀원 구성
