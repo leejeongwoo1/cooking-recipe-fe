@@ -93,7 +93,7 @@ What’s in your fridge 는 사용자가 다양한 레시피를 확인하고, �
 
 ## ERD
 
-![ERD](./public/image/erd.png)
+![ERD](./readme_images/erd.png)
 
 ## API
 
@@ -143,8 +143,8 @@ What’s in your fridge 는 사용자가 다양한 레시피를 확인하고, �
    ```
 4. 로컬 서버 시작
    `sh
-    npm run local_start
-    `
+ npm run local_start
+ `
    <br>
 
 ### 팀원 구성
