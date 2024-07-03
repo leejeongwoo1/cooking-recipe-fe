@@ -126,25 +126,39 @@ What’s in your fridge 는 사용자가 다양한 레시피를 확인하고, �
 ## 시작 가이드
 
 1. 리포지토리 클론
+
    ```sh
-   git clone git@github.com:zzgh06/cooking-recipe-be.git
+   git clone https://github.com/leejeongwoo1/cooking-recipe-fe.git
+   git clone https://github.com/leejeongwoo1/cooking-recipe-be.git
+
    ```
+
 2. 패키지 설치
    ```sh
-   cd cooking-recipe-be
    npm install
    ```
-3. 환경변수 설정
+3. 백엔드 환경변수 설정
    ```
    MONGO_URI=your_mongo_uri
    JWT_SECRET=your_jwt_secret
    GOOGLE_CLIENT_ID=your_google_client_id
    GOOGLE_CLIENT_SECRET=your_google_client_secret
    ```
-4. 로컬 서버 시작
+4. 프론트엔드 환경변수 설정
+   ```
+   REACT_APP_LOCAL_BACKEND=http://localhost:5000/api
+   REACT_APP_PROD_BACKEND=
+   REACT_APP_BACKEND_PROXY=
+   REACT_APP_CLOUDINARY_CLOUD_NAME=
+   REACT_APP_CLOUDINARY_PRESET=
+   REACT_APP_GOOGLE_CLIENT_ID=
+   REACT_APP_GOOGLE_SECRET_KEY=
+   ```
+5. 로컬 서버 시작
    `sh
- npm run local_start
- `
+백엔드: npm run local_start 
+프론트엔드: npm start
+`
    <br>
 
 ### 팀원 구성
