@@ -1,2 +1,2 @@
-/api/* http://what-is-your-fridge.us-east-1.elasticbeanstalk.com/api/:splat 200
+/api/* https://port-0-cooking-recipe-be-and8yv2klx5vigmi.sel5.cloudtype.app/api/:splat 200
 /*    /index.html   200
